@@ -45,6 +45,16 @@
         {{ session('inv_success') }}
         </div>
         @endif
+        @if (session('proj_success'))
+        <div class="alert alert-success" role="alert">
+        {{ session('proj_success') }}
+        </div>
+        @endif
+        @if (session('pub_success'))
+        <div class="alert alert-success" role="alert">
+        {{ session('pub_success') }}
+        </div>
+        @endif
         <div class="row">
             <div class="col-12 col-md-8">
                 <div class="mosh-blog-posts">

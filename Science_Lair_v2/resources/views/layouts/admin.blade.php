@@ -1,6 +1,13 @@
+@php
+    if(url()->current() != 'http://localhost/Science_Lair_v2/public/registerpubinv' && url()->current() != 'http://localhost/Science_Lair_v2/public/registerpub'){
+        if(Session::has('extinv')){
+            Session::forget('extinv');
+        }
+    } 
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -80,8 +87,8 @@
                                     <div class="dropdown-menu" aria-labelledby="moshDropdown">
                                         <a class="dropdown-item" href="{{ route('register') }}">Usuario</a>
                                         <a class="dropdown-item" href="{{ route('registerinv') }}">Investigador</a>
-                                        <a class="dropdown-item" href="services.html">Proyecto</a>
-                                        <a class="dropdown-item" href="blog.html">Publicación</a>
+                                        <a class="dropdown-item" href="{{ route('registerproject') }}">Proyecto</a>
+                                        <a class="dropdown-item" href="{{ route('registerpubinv') }}">Publicación</a>
                                     </div>
                                 </li>
 

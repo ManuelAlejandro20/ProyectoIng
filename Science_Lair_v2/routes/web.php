@@ -38,3 +38,15 @@ Route::post('gestionargrupos', 'Auth\RegisterGestionarGruposController@upload');
 //Registrar nuevo investigador
 Route::get('registerinv', 'Auth\RegisterInvController@showRegistrationForm')->name('registerinv');
 Route::post('registerinv', 'Auth\RegisterInvController@register');
+
+//Registrar nuevo proyecto
+Route::get('registerproject', 'Auth\RegisterProjectController@showRegistrationForm')->name('registerproject');
+Route::post('registerproject', 'Auth\RegisterProjectController@register');
+
+//Registrar nueva publicacion
+Route::get('registerpub', 'Auth\RegisterPubController@showRegistrationForm')->name('registerpub');
+Route::post('registerpub', 'Auth\RegisterPubController@register');
+
+Route::get('registerpubinv', 'Auth\RegisterPubController@showRegistrationForm')->name('registerpubinv');
+Route::post('registerpubinv', 'Auth\RegisterPubController@registerpubinv');
+Route::post('extinv', 'Auth\RegisterPubController@addextinv');
