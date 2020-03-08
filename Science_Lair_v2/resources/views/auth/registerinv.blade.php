@@ -12,6 +12,17 @@
     <!-- Favicon -->
     <link rel="icon" href="imgTemp/icon.ico">
     
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <style>
+        .btn-group-xs > .btn, .btn-xs {
+          padding: .25rem .4rem;
+          font-size: .875rem;
+          line-height: .5;
+          border-radius: .2rem;
+        }
+    </style>
+
 </head>
 
 <!-- ***** Breadcumb Area Start ***** -->
@@ -110,7 +121,7 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-4.7 offset-md-5">
+                            <div class="col-md-4.7 offset-md-4">
                                 <button class="btn mosh-btn mt-50" type="submit">{{ __('Registrar investigador') }}</button>
                                 </button>
                             </div>
@@ -143,6 +154,36 @@
                     </div>
                 </div>
             </div>
+
+            <div class="container" style="margin-top:30px;">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <table class="table table-striped">
+                        <thead class="alert alert-info">
+                                <th style="text-align:center">Nombre completo
+                                <th>
+                                <th style="text-align:center">Número pasaporte</th>
+                                <th style="text-align:center">Unidad correspondiente</th>
+                                <th style="text-align:center">Estado</th>
+                                <th style="text-align:center"> </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align:center">MANUEL ALEJANDRO TRIGO MONTALBAN</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td style="text-align:center"><button type="button" class="btn-success btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Editar</button></td>
+                            </tr>
+                        </tbody> 
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
 </section>
