@@ -39,6 +39,9 @@ Route::post('gestionargrupos', 'Auth\RegisterGestionarGruposController@upload');
 Route::get('registerinv', 'Auth\RegisterInvController@showRegistrationForm')->name('registerinv');
 Route::post('registerinv', 'Auth\RegisterInvController@register');
 
+//Editar Informacion del investigador
+Route::post('editinv', 'Auth\RegisterInvController@edit');
+
 //Registrar nuevo proyecto
 Route::get('registerproject', 'Auth\RegisterProjectController@showRegistrationForm')->name('registerproject');
 Route::post('registerproject', 'Auth\RegisterProjectController@register');
